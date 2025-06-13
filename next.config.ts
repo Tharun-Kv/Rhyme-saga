@@ -1,7 +1,10 @@
-import type {NextConfig} from 'next';
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'export', // Required for static export
+  basePath: '/Rhyme-saga', // Replace with your GitHub repo name
+  trailingSlash: true, // Needed for GitHub Pages routing
+
   typescript: {
     ignoreBuildErrors: true,
   },
